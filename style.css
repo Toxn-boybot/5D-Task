@@ -1,0 +1,309 @@
+/* Start Global */
+* {
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+:root {
+  --mainColor: #0089ed;
+  --secondaryColor: #ffffff;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}
+
+/* End Global */
+.up {
+  background: var(--mainColor);
+  height: 50%;
+}
+
+.up .logo {
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.up .content {
+  margin-left: 50px;
+  margin-top: 50px;
+  color: var(--secondaryColor);
+  display: flex;
+  width: 50%;
+}
+.up .content .text h1 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.up .content .text h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.up .content .text p {
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.up .content .text {
+  width: 60%;
+}
+.up .content .image img {
+  position: absolute;
+  width: 300px;
+  top: -100px;
+  animation: up-and-down 2s linear infinite;
+  -webkit-animation: up-and-down 2s linear infinite;
+  animation-direction: alternate;
+}
+.down {
+  background-color: var(--secondaryColor);
+}
+.down .content {
+  margin-top: 50px;
+  margin-left: 70px;
+}
+.down .content p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.down .content .users {
+  display: flex;
+  gap: 20px;
+}
+.down .content .users .box {
+  width: 140px;
+
+  border-radius: 9px;
+  background: #eff8ff;
+  cursor: pointer;
+}
+.down .content .users .box:hover {
+  box-shadow: rgb(100 100 111 / 51%) 0px 7px 29px 0px;
+}
+.down .content .users .box .icon {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.down .content .users .box .icon i {
+  opacity: 0.65;
+  cursor: pointer;
+}
+.down .content .users .box .image {
+  display: flex;
+  justify-content: center;
+}
+.down .content .users .box .image img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.down .content .users .box .name {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5px;
+}
+.down .content .users .box .activity {
+  color: #adadad;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.form {
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  background-color: var(--secondaryColor);
+  width: 35%;
+  min-width: 390px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+  padding: 2.7% 2.3%;
+}
+.form .heading .welcome {
+  color: #000;
+  font-size: 21px;
+  font-weight: 400;
+}
+.form .heading .welcome span {
+  color: var(--mainColor);
+  font-weight: 600;
+}
+
+.form .heading .account {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #8d8d8d;
+  font-size: 13px;
+  z-index: 2;
+}
+.form .heading .account p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.form .heading .account a {
+  text-decoration: none;
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.form .heading .form-name {
+  color: #000;
+  font-size: 45px;
+  font-weight: 500;
+}
+.form .login-methods {
+  display: flex;
+  gap: 10px;
+  margin-top: 5%;
+}
+
+.form .login-methods .gmail {
+  padding: 3.5% 6%;
+  border-radius: 9px;
+  background: #e9f1ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  text-wrap: nowrap;
+  cursor: pointer;
+}
+.form .login-methods .gmail p {
+  margin: 0;
+}
+.facebook,
+.apple {
+  border-radius: 9px;
+  background: #f6f6f6;
+  width: 15%;
+  cursor: pointer;
+}
+.form .input-fields {
+  margin-top: 25px;
+}
+.form .input-fields .password {
+  margin-top: 10px;
+}
+.form .input-fields label {
+  color: #000;
+  font-weight: 500;
+}
+.form .input-fields input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-top: 5px;
+}
+.form .input-fields input:focus {
+  border: 1px solid var(--mainColor);
+}
+.forgot-password {
+  margin-top: 10px;
+}
+.forgot-password a {
+  text-decoration: none;
+  color: var(--mainColor);
+  display: block;
+  text-align: right;
+  font-size: 13px;
+}
+.submit {
+  width: 100%;
+  color: var(--secondaryColor);
+  background-color: var(--mainColor);
+  border: none;
+  padding: 3% 0;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.personal-info {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@keyframes up-and-down {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 800px) {
+  .up .content,
+  .down {
+    display: none;
+  }
+  .up {
+    height: 100%;
+  }
+  .form {
+    min-width: 0;
+    width: 90%;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 5%;
+  }
+  .form .heading .welcome {
+    font-size: 19px;
+  }
+  .form .heading .account {top: 0px;}
+  .form .heading .account {max-width: 87px;}
+}
+@media (max-width: 360px) {
+  .form .heading .account {
+    position: initial;
+  }
+  .form .login-methods {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  .form .heading .account {
+    
+    margin-top: 10px;
+   
+  }
+  .form {
+    height: 85%;
+  }
+}
